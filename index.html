@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List image style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+    <!-- File Upload and Display Logic -->
+    <section class="file-upload">
+        <button class="file-upload-btn" type="button"
+            onclick="document.querySelector('.file-upload-input').click()">Upload
+            An Image</button>
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <h3 class="drag-text">Drop it here!</h3>
+        </div>
+        <p class="highlight">Current image looks like this:</p>
+        <img id="list-image" src="./BulletPoints/question-mark.png" alt="uploaded image" />
+    </section>
+
+
+</body>
+<script src="script.js"></script>
+
+
+</html>
